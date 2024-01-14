@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500&display=swap');
+
+:root {
+   --color-primary: #6C9BCF;
+   --color-danger: #FF0060;
+   --color-success: #1B9C85;
+   --color-warning: #F7D060;
+   --color-white: #fff;
+   --color-info-dark: #7d8da1;
+   --color-dark: #363949;
+   --color-light: rgba(132, 139, 200, 0.18);
+   --color-dark-variant: #677483;
+   --color-background: #f6f6f9;
+
+   --card-border-radius: 2rem;
+   --border-radius-1: 0.4rem;
+   --border-radius-2: 1.2rem;
+
+   --card-padding: 1.8rem;
+   --padding-1: 1.2rem;
+
+   --box-shadow: 0 2rem 3rem var(--color-light);
+   --box-shadow-dark: 0 2rem 3rem var(--color-dark);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: 0;
+   font-family: 'sora';
+}
+
+body {
+   height: 100vh;
+   background-color: #00695dc0;
+}
+
+.wrapper {
+   background-color: var(--color-white);
+   padding: 2rem 2rem;
+   position: absolute;
+   width: 500px;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   border-radius: var(--border-radius-2);
+   box-shadow: var(--box-shadow-dark);
+   transition: all 0.3s ease;
+}
+
+.wrapper:hover {
+   box-shadow: none;
+}
+
+#placement {
+   height: 25px;
+   width: 93%;
+   border: 2px solid var(--color-info-dark);
+   padding: 0.8em 1em;
+   outline: none;
+   border-radius: var(--border-radius-1);
+}
+
+.options {
+   margin-top: 0.9rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+select {
+   appearance: none;
+   width: 8em;
+   padding: 0.45em 0.9em;
+   font-size: 1.25em;
+   letter-spacing: 0.5px;
+   cursor: pointer;
+   background-color: #00695dc0;
+   border: none;
+   color: var(--color-white);
+   background-image: url(image/keyboard-down-arrow.png);
+   background-repeat: no-repeat;
+   background-position: 6.5em;
+   background-size: 1.1em;
+   outline: none;
+   border-radius: 0.3em;
+}
+
+select::-ms-expand {
+   display: none;
+}
+
+select option {
+   background-color: #f5f0f0;
+   color: #00695dc0;
+   letter-spacing: 0.06rem;
+   font-size: 1.12rem;
+   font-weight: 400;
+}
+
+.selected {
+   display: none;
+}
+
+.color-inp {
+   appearance: none;
+   background-color: transparent;
+   width: 169px;
+   height: 50px;
+   outline: none;
+   border: 2px solid var(--color-white);
+   cursor: pointer;
+}
+
+.color-primary {
+   position: absolute;
+   z-index: 1;
+   top: 46% 1rem;
+   left: 43%;
+   color: var(--color-white);
+   opacity: 0.7;
+   pointer-events: none;
+}
+
+.color-secondary {
+   position: absolute;
+   z-index: 1;
+   top: 46%;
+   left: 74%;
+   color: var(--color-white);
+   opacity: 0.7;
+   pointer-events: none;
+}
+
+.color-inp::-webkit-color-swatch {
+   border-radius: 0.3rem;
+   border: 0.18rem solid var(--color-primary);
+}
+
+.color-inp::-moz-color-swatch {
+   border-radius: 0.3rem;
+   border: 0.18rem solid var(--color-primary);
+}
+
+.box {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top: -10px;
+}
+
+.box button {
+   font-size: 1rem;
+   padding: 0.8rem 2rem;
+   border-radius: var(--border-radius-1);
+   margin-top: 1rem;
+   width: 90%;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 9px;
+}
+
+.box a {
+   font-size: 1rem;
+   padding: 0.8rem 2rem;
+   border-radius: var(--border-radius-1);
+   margin-top: 1rem;
+   width: 76%;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 9px;
+}
+
+.box button:disabled {
+   background-color: #00695dc0;
+   color: var(--color-white);
+   border: 2px dashed var(--color-white);
+   border-radius: 15px;
+   letter-spacing: 9px;
+   font-weight: bold;
+}
+
+.box button {
+   background-color: #00695dc0;
+   color: var(--color-white);
+   border: 2px solid var(--color-white);
+}
+
+.box a {
+   display: flex;
+   background-color: #00695dc0;
+   color: var(--color-white);
+   border: 2px solid var(--color-white);
+   border-radius: 15px;
+   letter-spacing: 9px;
+   font-weight: bold;
+   text-decoration: none;
+   border: 2px dashed var(--color-white);
+   justify-content: center;
+}
+
+.container{
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+   background-color: #cccccc58;
+   border-radius: var(--border-radius-2);
+}
+
+.hide{
+   display: none;
+}
