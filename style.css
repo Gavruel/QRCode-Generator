@@ -200,10 +200,11 @@ select option {
 }
 
 .container{
+   padding: 15px;
    display: flex;
    justify-content: center;
    margin-top: 15px;
-   background-color: #cccccc58;
+   background-color: #cccccc80;
    border-radius: var(--border-radius-2);
 }
 
